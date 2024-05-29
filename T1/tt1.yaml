@@ -1,0 +1,38 @@
+# Simulation Parameters
+num_sensors: 10
+sampling_frequency: 40e6
+center_frequency: 5e6
+bandwidth: 2e6
+pulse_duration: 5e-6
+
+# Tissue Model
+num_layers: 3
+layer_thicknesses:
+  - 0.02
+  - 0.05
+  - 0.08
+speed_of_sound_values:
+  - 1540
+  - 1580
+  - 1570
+attenuation_values:
+  - 0.5
+  - 0.8
+  - 0.6
+
+# Reflectors
+reflector_depths:
+  - 0.04
+  - 0.08
+  - 0.14
+reflector_strengths:
+  - 0.8
+  - 0.5
+  - 0.3
+
+# Noise 
+noise_type: 'thermal'  
+noise_level: 0.01  
+
+# Output/Metadata
+num_simulations: 2  
